@@ -1,0 +1,27 @@
+{
+  "namespace": "com.training.ecommerce.model",
+  "name": "Order",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "total_amount",
+      "type": "double"
+    },
+    {
+      "name": "product_id",
+      "type": "string"
+    },
+    {
+      "name": "product_quantity",
+      "type": "int"
+    },
+    {
+      "name": "customer_id",
+      "type": "string"
+    }
+  ]
+}

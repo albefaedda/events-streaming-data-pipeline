@@ -1,0 +1,33 @@
+{
+  "namespace": "com.training.ecommerce.model",
+  "name": "DlqMessage",
+  "type": "record",
+  "fields": [
+    {
+      "name": "source",
+      "type": "string",
+      "doc": "The service from which the message originates."
+    },
+    {
+      "name": "error_timestamp",
+      "type": "long",
+      "doc": "The timestamp (in epoch milli) when the error occurred processing the original message."
+    },
+    {
+      "name": "error_message",
+      "type": "string",
+      "doc": "A description of the error that occurred during processing."
+    },
+    {
+      "name": "originalKey",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "The key of the original message, if any. Null if the message did not have a key."
+    },
+    {
+      "name": "original_payload",
+      "type": "string",
+      "doc": "The payload of the original message that could not be processed."
+    }
+  ]
+}

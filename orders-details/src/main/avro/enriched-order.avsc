@@ -1,0 +1,39 @@
+{
+  "namespace": "com.training.ecommerce.model",
+  "name": "EnrichedOrder",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "purchased_item",
+      "type": {
+          "type":"record",
+          "name":"ItemDetail",
+          "fields":[
+            {"name":"name", "type":"string"},
+            {"name":"qty", "type":"int"},
+            {"name":"price", "type":"double"}
+          ]
+        }
+    },
+    {
+      "name": "total_amount",
+      "type": "double"
+    },
+    {
+      "name": "customer_id",
+      "type": "string"
+    },
+    {
+      "name": "customer_name",
+      "type": "string"
+    },
+    {
+      "name": "delivery_address",
+      "type": "string"
+    }
+  ]
+}

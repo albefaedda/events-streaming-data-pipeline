@@ -1,0 +1,23 @@
+{
+  "namespace": "com.training.ecommerce.model",
+  "name": "OrdersTotalByCustomer",
+  "type": "record",
+  "fields": [
+    {
+          "name": "customer_id",
+          "type": "string"
+    },
+    {
+          "name": "customer_name",
+          "type": "string"
+    },
+    {
+      "name": "num_orders",
+      "type": "int"
+    },
+    {
+      "name": "total_amount",
+      "type": "double"
+    }
+  ]
+}
